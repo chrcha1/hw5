@@ -8,11 +8,11 @@
 #include <algorithm>
 // add or remove necessary headers as you please
 
-#endif
-
 #include "schedwork.h"
 
 using namespace std;
+
+#endif
 
 // a constant that can be used to indicate an INVALID 
 // worker ID if that is useful to your implementation.
