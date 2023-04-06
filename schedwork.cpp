@@ -12,7 +12,7 @@
 
 using namespace std;
 
-#endif
+#endif 
 
 // a constant that can be used to indicate an INVALID 
 // worker ID if that is useful to your implementation.
@@ -81,7 +81,8 @@ bool isValid(const AvailabilityMatrix& avail, unsigned int worker, int m, int n,
 
     for(int i = 0; i < n; i++)
     {
-        for (int j = 0; j < d; j++)
+        int j = 0;
+        while (j < d)
         {
             if (sched[i][j] == worker)
             {
@@ -89,6 +90,7 @@ bool isValid(const AvailabilityMatrix& avail, unsigned int worker, int m, int n,
                 numShifts++;
                 numShiftsPerDay++;
             }
+            j++;
         }
 
         if (numShiftsPerDay > 1) return false; // >1 shift per day

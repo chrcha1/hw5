@@ -1,12 +1,14 @@
-// For debugging
+#ifndef RECCHECK
+// debugging
 #include <iostream>
-// For std::remove
+// std::remove
 #include <algorithm> 
 #include <map>
 #include <set>
 #include "wordle.h"
 #include "dict-eng.h"
 using namespace std;
+#endif
 
 
 // Add prototypes of helper functions her
