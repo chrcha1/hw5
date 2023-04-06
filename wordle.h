@@ -2,7 +2,6 @@
 #ifndef WORDLE_H
 #define WORDLE_H
 
-#ifndef RECCHECK
 #include <set>
 #include <string>
 #endif
